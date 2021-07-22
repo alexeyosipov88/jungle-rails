@@ -22,6 +22,7 @@ class ApplicationController < ActionController::Base
      enhanced_cart.map {|entry| entry[:product].price_cents * entry[:quantity]}.sum
   end
   helper_method :cart_subtotal_cents
+  
 
 
   def update_cart(new_cart)
