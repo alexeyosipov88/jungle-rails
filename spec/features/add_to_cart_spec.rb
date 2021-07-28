@@ -14,17 +14,16 @@ RSpec.feature "Users can navigate from the home page to the product detail page 
       )
     end
   end
-  scenario "They can see details of a product" do
+  scenario "They can  click the 'Add to Cart' button for a product on the home page and in doing so their cart increases by one" do
     # ACT
     visit root_path
-
-    first('.product').click_link('Details')
-  
+    @navbar = page.find("nav.navbar")
+    expect(@navbar).to have_content(0)
+    first('article.product').click_button('Add')
     sleep 5
-  
     # DEBUG / VERIFY
     save_screenshot
-    expect(page).to have_content('Description')
+    expect(@navbar).to have_content(1)
   end
- 
+
 end
