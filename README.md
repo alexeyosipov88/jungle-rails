@@ -3,8 +3,8 @@
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
 ## Screenshots 
-!["List of appointments"]()
-!["Save an appointment"]()
+!["all-products"](https://github.com/alexeyosipov88/jungle-rails/blob/master/docs/all-products.png)
+!["my-cart"](https://github.com/alexeyosipov88/jungle-rails/blob/master/docs/my-cart.png)
 
 ## Additional Steps for Apple M1 Machines
 
